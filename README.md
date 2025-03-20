@@ -75,6 +75,6 @@ Pull requests are welcome! Feel free to open an issue if you find a bug or have 
 ---
 ## Author
 **m7amh**  
-GitHub: [mohamed abdelrahman](https://github.com/m7amh/info-sec-mgmt-api)
+GitHub: [mohamed abdelrahman](https://github.com/m7amh)
 
 
