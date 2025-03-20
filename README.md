@@ -1,76 +1,75 @@
-# Info Security Management API
+# InfoSec Management API
 
-## Overview
-This project is a **RESTful API** for managing users and products with authentication and authorization mechanisms using **Node.js, Express, Sequelize, and MySQL**.
+## 📌 Project Overview
 
-## Features
-- **User Authentication**: Register and login using **JWT authentication**.
-- **Product Management**: CRUD operations on products with protected routes.
-- **Database Integration**: Uses **MySQL** with Sequelize ORM.
-- **Security Best Practices**: Implements **hashed passwords** and **JWT-based authentication**.
+This is a **RESTful API** built with **Node.js**, **Express**, and **MySQL (Sequelize ORM)** for **Information Security Management**. The API supports **user authentication (JWT)** and **product management** functionalities.
 
-## Tech Stack
-- **Backend**: Node.js, Express.js
-- **Database**: MySQL, Sequelize
-- **Authentication**: JWT, bcryptjs
-- **Environment Configuration**: dotenv
+## 🚀 Features
 
-## Installation
-### Prerequisites
-Ensure you have the following installed:
-- [Node.js](https://nodejs.org/)
-- [MySQL](https://www.mysql.com/)
+- User authentication with **JWT (JSON Web Token)**
+- Secure password hashing using **bcryptjs**
+- CRUD operations for **products**
+- Protected routes using **middleware**
+- Database integration with **Sequelize ORM**
 
-### Steps
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/your-username/info-sec-mgmt-api.git
-   cd info-sec-mgmt-api
-   ```
-2. Install dependencies:
-   ```sh
-   npm install
-   ```
-3. Create a `.env` file and add:
-   ```env
-   DB_NAME=your_database_name
-   DB_USER=your_database_user
-   DB_PASS=your_database_password
-   DB_HOST=localhost
-   JWT_SECRET=your_secret_key
-   PORT=5000
-   ```
-4. Start the MySQL server and create the database if not already created.
-5. Run the server:
-   ```sh
-   npm start
-   ```
+## 📂 Project Structure
 
-## API Endpoints
-### User Routes
-| Method | Endpoint       | Description         |
-|--------|--------------|---------------------|
-| POST   | `/api/users/signup` | Register a new user |
-| POST   | `/api/users/login`  | Login and get a token |
+## ⚡ Installation & Setup
 
-### Product Routes (Protected)
-| Method | Endpoint         | Description          |
-|--------|----------------|----------------------|
-| POST   | `/api/products`  | Add a new product (Requires Auth) |
-| GET    | `/api/products`  | Get all products |
-| GET    | `/api/products/:pid` | Get a specific product |
-| PUT    | `/api/products/:pid` | Update a product (Requires Auth) |
-| DELETE | `/api/products/:pid` | Delete a product (Requires Auth) |
+### 1️⃣ Clone the Repository
 
-## Security Measures
-- Passwords are **hashed** using `bcryptjs`.
-- API routes are **protected** using **JWT authentication**.
-- Environment variables are stored securely using `.env`.
+### 2️⃣ Install Dependencies
 
-## License
-This project is licensed under the MIT License.
+### 3️⃣ Configure Environment Variables
 
+Create a `.env` file in the project root and add:
+
+### 4️⃣ Run Database Migrations (Sequelize)
+
+### 5️⃣ Start the Server
+
+The API will be running at `http://localhost:5000`
+
+## 📌 API Endpoints
+
+### 🛡️ Authentication
+
+| Method | Endpoint            | Description                 |
+| ------ | ------------------- | --------------------------- |
+| POST   | `/api/users/signup` | Register a new user         |
+| POST   | `/api/users/login`  | Authenticate user & get JWT |
+
+### 🛒 Product Management
+
+| Method | Endpoint            | Description                      |
+| ------ | ------------------- | -------------------------------- |
+| POST   | `/api/products`     | Create a new product (Protected) |
+| GET    | `/api/products`     | Get all products                 |
+| GET    | `/api/products/:id` | Get a single product by ID       |
+| PUT    | `/api/products/:id` | Update a product (Protected)     |
+| DELETE | `/api/products/:id` | Delete a product (Protected)     |
+
+🔒 **Protected routes require sending a JWT token in the ****`Authorization`**** header:**
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+## 👨‍💻 Contributing
+
+Pull requests are welcome! Feel free to open an issue if you find a bug or have a feature request.
+
+## 🌟 Acknowledgments
+
+- Built with **Node.js, Express, and Sequelize**
+- Inspired by best security practices in **API development**
+
+---
+
+🔗 **GitHub Repository**: [Repository](https://github.com/m7amh/info-sec-mgmt-api)
+---
 ## Author
 **m7amh**  
 GitHub: [mohamed abdelrahman](https://github.com/m7amh/info-sec-mgmt-api/edit/main/README.md)
+
 
