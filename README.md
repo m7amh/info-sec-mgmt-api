@@ -13,7 +13,7 @@ This is a **RESTful API** built with **Node.js**, **Express**, and **MySQL (Sequ
 - Database integration with **Sequelize ORM**
 
 ## 📂 Project Structure
-## Installation
+### Installation
 ### Prerequisites
 Ensure you have the following installed:
 - [Node.js](https://nodejs.org/)
