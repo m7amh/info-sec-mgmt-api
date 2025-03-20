@@ -71,6 +71,6 @@ Ensure you have the following installed:
 This project is licensed under the MIT License.
 
 ## Author
-**Your Name**  
-GitHub: [your-username](https://github.com/your-username)
+**m7amh**  
+GitHub: [mohamed abdelrahman](https://github.com/m7amh/info-sec-mgmt-api/edit/main/README.md)
 
