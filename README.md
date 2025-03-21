@@ -124,7 +124,7 @@ This project is licensed under the **MIT License**.
 Pull requests are welcome! Feel free to open an issue if you find a bug or have a feature request.
 
 ## 📢 Contact
-- **Author:** Your Name  
+- **Author:** Mohamed Abdelrahman  
 - **GitHub:** [Mohamed Abdelrahman](https:/m7amh/github.com/m7amh)
 
 ---
